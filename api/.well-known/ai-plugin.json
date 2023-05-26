@@ -1,0 +1,18 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Hello World",
+  "name_for_model": "Hello_word",
+  "description_for_human": "Interacts with a simple hello world API and retrieves information from there.",
+  "description_for_model": "Interacts with a simple hello world API and retrieves information from there.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://converter-app-chat-gpt-plugin.vercel.app/openapi.yaml",
+    "is_user_authenticated": false
+  },
+  "logo_url": "https://converter-app-chat-gpt-plugin.vercel.app/logo.png",
+  "contact_email": "info@converter.app",
+  "legal_info_url": "https://converter.app/terms/"
+}

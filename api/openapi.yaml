@@ -1,0 +1,24 @@
+openapi: 3.0.1
+info:
+  title: Hello World
+  description: Example interacting with a hello world API.
+  version: 'v1'
+servers:
+  - url: https://converter-app-chat-gpt-plugin.vercel.app/
+paths:
+  /hello_world:
+    get:
+      operationId: helloWorld
+      summary: Returns a simple "Hello, World!" message.
+      parameters: []
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Hello, World!" 
