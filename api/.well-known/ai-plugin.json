@@ -9,10 +9,10 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://converter-app-chat-gpt-plugin.vercel.app/openapi.yaml",
+    "url": "https://hello-world-chatgpt-plugin.vercel.app/openapi.yaml",
     "is_user_authenticated": false
   },
-  "logo_url": "https://converter-app-chat-gpt-plugin.vercel.app/logo.png",
+  "logo_url": "https://hello-world-chatgpt-plugin.vercel.app/logo.png",
   "contact_email": "info@converter.app",
   "legal_info_url": "https://converter.app/terms/"
 }

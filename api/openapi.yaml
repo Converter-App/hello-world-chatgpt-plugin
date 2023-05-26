@@ -4,7 +4,7 @@ info:
   description: Example interacting with a hello world API.
   version: 'v1'
 servers:
-  - url: https://converter-app-chat-gpt-plugin.vercel.app/
+  - url: https://hello-world-chatgpt-plugin.vercel.app/
 paths:
   /hello_world:
     get:
