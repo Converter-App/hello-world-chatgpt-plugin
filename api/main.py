@@ -9,10 +9,10 @@ app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "https://chat.openai.com"}})
 key = os.environ.get('API_KEY')
 
-@app.route("/converter_list", methods=['GET'])
+@app.route("/hello_world", methods=['GET'])
 def hello_world():
 
-    endpoint = f'https://converter.app/api/search.php?key={key}'
+    endpoint = f'https://converter.app/api/hello.php?key={key}'
         
     response = requests.get(endpoint)
     response = response.json()
