@@ -21,7 +21,7 @@ def hello_world():
     #data = {d['label']:d['url'] for d in response}
     
     data = {}
-    data['response'] = 'Hello world!
+    data['response'] = 'Hello world!'
 
     return app.response_class(response=json.dumps(data), status=200)
 
