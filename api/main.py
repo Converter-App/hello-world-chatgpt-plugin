@@ -12,12 +12,17 @@ key = os.environ.get('API_KEY')
 @app.route("/hello_world", methods=['GET'])
 def hello_world():
 
-    endpoint = f'https://converter.app/api/hello.php?key={key}'
+    # Interact with your exisiting API here
+    #endpoint = f'https://converter.app/api/hello.php?key={key}'
         
-    response = requests.get(endpoint)
-    response = response.json()
-    data = {d['label']:d['url'] for d in response}
+    #response = requests.get(endpoint)
+    #response = response.json()
+
+    #data = {d['label']:d['url'] for d in response}
     
+    data = {}
+    data['response'] = 'Hello world!
+
     return app.response_class(response=json.dumps(data), status=200)
 
 @app.route('/.well-known/ai-plugin.json', methods=['GET', 'OPTIONS'])
