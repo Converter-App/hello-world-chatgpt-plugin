@@ -1,10 +1,10 @@
-# ChatGPT plugins quickstart
+# Hello World ChatGPT Plugin Example
 
-Get a todo list ChatGPT plugin up and running in under 5 minutes using Python. If you do not already have plugin developer access, please [join the waitlist](https://openai.com/waitlist/plugins).
+The source code of our [Hello World ChatGPT Plugin YouTube tutorial](https://converter.app/blog/creating-your-first-chat-gpt-plugin-a-step-by-step-guide). For developing your own plugin you will need to [join the OpenAI waitlist](https://openai.com/waitlist/plugins) for plugin developments.
 
 ## Setup
 
-To install the required packages for this plugin, run the following command:
+In the guide we will use Vercel to automatically deploy the plugin in an elegant way. To install the required packages for this plugin in your local environment, run the following command:
 
 ```bash
 pip install -r requirements.txt
@@ -16,16 +16,22 @@ To run the plugin, enter the following command:
 python main.py
 ```
 
-Once the local server is running:
+## Deployment and Installation
 
-1. Navigate to https://chat.openai.com. 
-2. In the Model drop down, select "Plugins" (note, if you don't see it there, you don't have access yet).
-3. Select "Plugin store"
-4. Select "Develop your own plugin"
-5. Enter in `localhost:5003` since this is the URL the server is running on locally, then select "Find manifest file".
+Follow the steps below to begin the process of integrating your Hello World Chat GPT plugin:
 
-The plugin should now be installed and enabled! You can start with a question like "What is on my todo list" and then try adding something to it as well! 
+1. **Open the OpenAI Chat Interface**: Start by navigating to the OpenAI chat interface at https://chat.openai.com.
 
-## Getting help
+2. **Select the 'Plugins' Model**: Look for the model drop-down menu. From the options, choose 'Plugins'. If you do not see this option, it means you may not have access yet.
 
-If you run into issues or have questions building a plugin, please join our [Developer community forum](https://community.openai.com/c/chat-plugins/20).
+3. **Open the Plugin Store**: Once you have chosen 'Plugins', the Plugin Store will be available. Click on it to open it.
+
+4. **Initiate Development of Your Plugin**: Within the Plugin Store, you will find an option that says 'Develop your own plugin'. Click on it to get started with your plugin development.
+
+5. **Enter Localhost URL**: At this stage, you will need to enter your server's URL. Since your server is running locally, type in `https://hello-world-chatgpt-plugin.vercel.app` and then click on 'Find manifest file'.
+
+6. **Enter Localhost URL**: Press install and confirm that you want to install an unverified plugin. Your first ChatGPT Plugin should be ready for usage now.
+
+**Note:** The URL in the steps above points to our deployed version of this plugin. If you want to develop it actively, you will need to replace it by your local or remote plugin URL.
+
+
